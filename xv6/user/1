@@ -1,0 +1,11 @@
+#include "types.h"
+#include "stat.h"
+#include "user.h"
+#include "fcntl.h"
+int getppid(int)
+{ 
+	fork();
+	printf(1,"child process is %d and parent process is %d\n",getpid(),getppid());
+
+}
+
